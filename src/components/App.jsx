@@ -23,7 +23,7 @@ const Login = lazy(() => import("../pages/Login/Login"));
 const Register = lazy(() => import("../pages/Register/Register"));
 const Contacts = lazy(() => import("../pages/Contacts/Contacts"));
 
-const App = () => {
+export const App = () => {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
 
