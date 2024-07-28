@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { logOut } from "../../redux/auth/operations";
 import { useAuth } from "../../hooks/useAuth";
-import { Button, Box, Text, Flex } from "@chakra-ui/react";
+import { Button, Text, Flex } from "@chakra-ui/react";
 
 const UserMenu = () => {
   const dispatch = useDispatch();

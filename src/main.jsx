@@ -8,14 +8,13 @@ import App from "./components/App";
 import Notiflix from "notiflix";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme";
-import "./index.css";
 
 Notiflix.Notify.init({
   width: "280px",
-  position: "right-top",
-  distance: "10px",
+  position: "center-top",
+  distance: "20px",
   opacity: 1,
-  timeout: 3000,
+  timeout: 1500,
   clickToClose: true,
   pauseOnHover: true,
 });
