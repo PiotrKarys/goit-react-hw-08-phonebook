@@ -7,7 +7,17 @@ import RestrictedRoute from "./RestrictedRoute";
 import { refreshUser } from "../redux/auth/operations";
 import { useAuth } from "../hooks/useAuth";
 import { Box, Spinner } from "@chakra-ui/react";
+import Notiflix from "notiflix";
 
+Notiflix.Notify.init({
+  width: "280px",
+  position: "center-top",
+  distance: "20px",
+  opacity: 1,
+  timeout: 1500,
+  clickToClose: true,
+  pauseOnHover: true,
+});
 const Home = lazy(() => import("../pages/Home/Home"));
 const Login = lazy(() => import("../pages/Login/Login"));
 const Register = lazy(() => import("../pages/Register/Register"));
